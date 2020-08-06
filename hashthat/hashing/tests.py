@@ -12,7 +12,6 @@ class FunctionalTestCase(TestCase):
 
     def setUp(self) -> None:
         path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "venv\Scripts\geckodriver.exe")
-        print(path)
         self.browser = webdriver.Firefox(executable_path=path)
 
     def test_there_is_homepage(self):
